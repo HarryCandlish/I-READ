@@ -1,10 +1,9 @@
 nav {
     height: 5rem;
     width: 100vw;
-    background: var(--color-primary);
+    background: #303c6c;
     display: grid;
     place-items: center;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
@@ -29,7 +28,13 @@ nav {
     height: 2rem;
     left: -3rem;
     position: relative;
+    color:  #fbe8a6;
+
     }
+
+.logo:hover {
+    color:  #D2fdff;
+}
 
 .nav_links {
     display: flex;
@@ -38,7 +43,7 @@ nav {
 }
 
 .nav_links a:hover {
-    color: var(--color-secondary);
+    color: #fbe8a6;
 }
 
 .nav_links a {
@@ -54,7 +59,7 @@ nav {
     display: block;
     width: 1.2rem;
     height: 1.2rem;
-    background: var(--color-primary);
+    background: #303c6c;
     position: absolute;
     left: calc(50% - 0.6rem);
     transform: rotate(45deg);
@@ -72,7 +77,11 @@ nav {
         cursor: pointer;
     }
     .nav_toggle-btn svg {
-        color: var(--color-gray-100);
+        color: #fbe8a6;
+    }
+
+    .nav_toggle-btn svg:hover {
+        color: #D2fdff;
     }
     .nav_links {
         position: absolute;
@@ -89,13 +98,13 @@ nav {
         width: 100%;
     }
     .nav_links li a {
-        background-color: var(--color-primary);
+        background-color: #303c6c;
         height: 100%;
         width: 100%;
         display: flex;
         align-items: center;
         padding: 1rem 5rem 1rem 3rem;
-        box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.1);
+        box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
     }
 
     .show_nav {

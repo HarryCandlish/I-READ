@@ -1,8 +1,12 @@
 import React from 'react'
 import './dashboard.css'
 
-export const Dashboard = () => {
+const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div>
+      <h1>Dashboard</h1>
+    </div>
   )
 }
+
+export default Dashboard
