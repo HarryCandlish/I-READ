@@ -1,0 +1,60 @@
+.main_header {
+    width: 100vw;
+    height: calc(100vh - 3rem) ;
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+
+.main_header-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between ;
+    gap: 6rem;
+}
+
+.main_header-left {
+    margin-top: -3rem;
+}
+
+.main_header-left h4 {
+    margin-bottom: 1rem;
+    color: var( --color-secondary-variant);
+    font-weight: 300;
+}
+
+.main_header-left h1 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.main_header-left p {
+    color: var(--color-gray-300);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.main_header-right {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.main_header-circle {
+    width: 25rem;
+    height: 25rem;
+    background: linear-gradient(76deg, var(--color-secondary-variant),
+    transparent);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.main_header-image {
+    position: relative;
+}
+
+
+

@@ -4,6 +4,7 @@ nav {
     background: #303c6c;
     display: grid;
     place-items: center;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
@@ -33,7 +34,7 @@ nav {
     }
 
 .logo:hover {
-    color:  #D2fdff;
+    color:  var(--color-secondary-variant);
 }
 
 .nav_links {
@@ -43,7 +44,7 @@ nav {
 }
 
 .nav_links a:hover {
-    color: #fbe8a6;
+    color: var(--color-secondary-variant);
 }
 
 .nav_links a {
@@ -81,7 +82,7 @@ nav {
     }
 
     .nav_toggle-btn svg:hover {
-        color: #D2fdff;
+        color: var(--color-secondary-variant);
     }
     .nav_links {
         position: absolute;
