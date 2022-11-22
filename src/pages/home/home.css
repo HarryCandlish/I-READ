@@ -4,6 +4,7 @@
     display: grid;
     place-items: center;
     margin-top: 3rem;
+    background-color: var(--color-secondary);
 }
 
 .main_header-container {
@@ -56,5 +57,29 @@
     position: relative;
 }
 
+.product {
+    background-color: var(--color-primary);
+}
+
+/* Product CSS */
+
+.product {
+    margin-top: 4rem;
+}
+
+.product_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.products_product a{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 

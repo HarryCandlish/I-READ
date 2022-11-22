@@ -37,7 +37,7 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.7;
     overflow-x: hidden;
-    background: var(--color-secondary);
+    background-color: #303c6c;
 }
 
 .container {
@@ -91,9 +91,69 @@ img {
 
 .btn-sm {
     padding: 0.4rem 1.2rem;
-    font-size:0.9rem
+    font-size:0.9rem;
+    border-radius:2rem;
+    transition: var(--transition);
+    color: var(--color-primary);
+    background: var(--color-secondary);
 }
 
 .btn-sm:hover {
-    background: var(--color-gray-100);
+    background: var(--color-secondary-variant);
+}
+
+ section {
+    margin-top: 10rem;
+ }
+
+ .section_head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ .section_head span {
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+ }
+
+ .card {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-secondary);
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 0 3rem 0 3rem;
+    transition: var(--transition);
+ }
+
+ .card:hover {
+    background: transparent;
+    cursor: default
+ }
+
+ .card span {
+    width: 3rem;
+    height: 3rem;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1.5rem;
+    margin-inline: auto;
+    border-radius: 1rem;
+    transition: var(--transition);
+ }
+
+ .card:hover span {
+      background: var(--color-primary);
+}
+
+.card small {
+    margin-top: 1rem;
+    display: block;
+    font-weight: 300;
 }
