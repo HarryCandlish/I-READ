@@ -5,6 +5,7 @@ import Product from '../../components/Product'
 import Values from '../../components/Values'
 import FAQs from '../../components/FAQs'
 
+
 const Home = () => {
   return (
     <>

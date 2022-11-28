@@ -4,7 +4,7 @@
     display: grid;
     place-items: center;
     margin-top: 3rem;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
 }
 
 .main_header-container {
@@ -22,13 +22,13 @@
 
 .main_header-left h4 {
     margin-bottom: 1rem;
-    color: var( --color-secondary-variant);
+    color: var( --color-gray-300);
     font-weight: 300;
 }
 
 .main_header-left h1 {
     margin-bottom: 1rem;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     font-weight: 600;
 }
 
@@ -47,7 +47,7 @@
 .main_header-circle {
     width: 25rem;
     height: 25rem;
-    background: linear-gradient(76deg, var(--color-secondary-variant),
+    background: linear-gradient(76deg, var(--color-secondary),
     transparent);
     border-radius: 50%;
     position: absolute;
@@ -58,7 +58,7 @@
 }
 
 .product {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
 }
 
 /* Product CSS */
@@ -82,19 +82,39 @@
 }
 
 .products_product:hover a {
-    background: var(--color-secondary-variant);
+    background: var(--color-gray-300);
+    color: var(--color-secondary);
 }
 
 /* Values */
 
+.values_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.values_value a{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.values_value:hover a {
+    background: var(--color-gray-500);
+}
+
+
 .values {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
+    margin-top: 4rem;
 }
 
 .values_container {
     display: grid;
-    grid-template-columns: 38% 50%;
-    gap: 12%;
 }
 
 .values_image {
@@ -111,56 +131,58 @@
     margin: 1.5rem 0 5rem;
 }
 
-.values_wrapper {
+/* .values_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3.4rem 2.4rem;
-}
+} */
 
 .card.values_value {
-    padding: 3.5rem;
-    text-align: left;
-    position: relative;
+    background-color: #303655;
+    border: 2px solid var(--color-primary);
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 0 3rem 0 3rem;
+    transition: var(--transition);
 }
 
 .card.values_value h4 {
     color: var(--color-secondary);
 }
 
-.card.values_value:hover {
- background-color: var(--color-primary);
-}
-
 .card.values_value span {
-    position: absolute;
-    top: -1.5rem;
+    position: relative;
+    background: #303655;
+    color: var(--color-secondary);
 }
 
 
 .values_icon {
     display: flex;
     align-items: center;
-    color: var(--color-primary);
-    background-color: var(--color-secondary);
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
     gap: 1rem;
  }
 
  .values_icon span {
     padding: 0.8rem;
     border-radius: 1rem;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     font-size: 1.5rem;
     margin-top: 5rem;
 
  }
 
  .card.values_value:hover span {
-    background-color: var(--color-secondary-variant);
+    color: var(--color-gray-300);
  }
 
  .values_icon h2 {
-    color: var(--color-primary);
+    color: var(--color-secondary);
     margin-top: 5rem;
+    font-size: 2rem;
+    line-height: 1.2;
  }
 
 .values_image {
@@ -178,10 +200,14 @@
 }
 
 .faq {
-    background: var(--color-gray-500);
+    background: #303655;
     padding: 2rem;
     border-radius: 1rem;
     cursor: pointer;
+}
+
+.faq:hover {
+    background-color: var(--color-gray-500);
 }
 
 .faq div {
@@ -192,7 +218,7 @@
 
 .faq_icon {
     background: transparent;
-    color: var(--color-gray-100);
+    color: var(--color-secondary);
     font-size: 1.5rem;
 }
 
@@ -204,6 +230,14 @@
     margin-top: 4rem;
 }
 
-.container .faqs_container {
-    margin-top: 5rem;
+.faq h4 {
+    color: var(--color-secondary);
 }
+
+/* Testimonials */
+
+.testimonials {
+    width: 50rem;
+    margin-inline: auto;
+}
+

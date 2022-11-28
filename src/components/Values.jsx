@@ -7,19 +7,15 @@ const Values = () => {
   return (
     <section className="values">
         <div className='container values_container'>
-            <div className="values_left">
+            {/* <div className="values_left">
                 <div className="values_image">
                     <img src={Image} alt="value image" className='values_image'/>
                 </div>
-            </div>
-            <div className="values_right">
+            </div> */}
                 <div className="values_icon">
                 <span><GiCutDiamond/></span>
                 <h2>Values</h2>
                 </div>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum 
-                </p>
                 <div className="values_wrapper">
                     {
                         values.map(({id, icon, title, desc}) => {
@@ -31,7 +27,7 @@ const Values = () => {
                         })
                     }
                 </div>
-            </div>
+           
         </div>
 
     </section>
